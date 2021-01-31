@@ -33,7 +33,7 @@
         <!--- <h1><?php bloginfo('name'); ?></h1> --->
         <!--- <h3><?php bloginfo('description'); ?></h3> --->
         <div id="header_menu">
-            menu
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </div>
     </div><!-- header -->
     <div id="wrapper_content">
