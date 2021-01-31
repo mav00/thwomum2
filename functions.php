@@ -1,4 +1,5 @@
 <?php
+
 // Register Sidebars //todo: left Sidebar should be added
 if ( function_exists('register_sidebar') )
     register_sidebar(
@@ -18,5 +19,30 @@ if ( function_exists('register_nav_menus') )
             'header-menu' => __( 'Header Menu' ),
             'footer-menu' => __( 'Footer Menu' )
     ));
+
+//logo
+if ( function_exists('add_theme_support'))
+    add_theme_support( 'custom-logo', array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    ) );
+
+
+
+function thwomum2_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+        'unlink-homepage-logo' => true, 
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'thwomum2_custom_logo_setup' );
 
 ?>

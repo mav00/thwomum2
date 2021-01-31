@@ -29,7 +29,7 @@ body        {margin: 0px; color: #333; background: #f2f2f2;}
     left: 0px;
     color: #fff; 
     background: #003399;
-    }
+}
 
 #header_logo     {
     position: fixed;
@@ -37,7 +37,27 @@ body        {margin: 0px; color: #333; background: #f2f2f2;}
     left: 0px;
     color: #fff; 
     float: left;
-    }
+}
+
+#header_menu{
+    margin-left: 500px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: #fff; 
+    float: left;
+}
+#header_menu li {
+    list-style:none;   
+    display: inline;
+}
+#header_menu a{ 
+    color: #fff; 
+    text-decoration:none; 
+    text-transform: uppercase; 
+}
+#header_menu a:hover{ color:#cccccc;}
+
 
 #wrapper_content {
     margin: 128px auto; /* height Header - height WP-Admin-Bar 32px */
