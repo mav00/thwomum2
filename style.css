@@ -1,0 +1,65 @@
+/*   
+Theme Name: THW OMUM2
+Theme URI: https://github.com/mav00/wp_theme_thwomum2
+Description: THW OMUM Wordpress Theme www.thw-muenchen-mitte.de 
+Author: Matthias Verwokd
+Author URI: http://verwold.name
+
+
+body        {color: #444444; background: #fff;} 
+wrapper    {width: 850px; margin: auto; text-align: left; background: #fff;}
+header     {height: 160px; padding: 20px; background-color: #003796;}
+main       {width: 520px; padding: 20px; float: left; background: #fff;}
+sidebar    {width: 270px; padding: 10px; padding-top: 20px; float: left;}
+footer     {clear: both; height: 100px; padding: 20px; }
+
+*/
+html {margin-top:  0px;}
+
+body        {margin: 0px; color: #333; background: #f2f2f2;}
+
+
+ 
+#wrapper_all    {margin: 0px; width: 100%; background: #f2f2f2;}
+#header     {
+    width: 100%; 
+    height: 160px; 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: #fff; 
+    background: #003399;
+    }
+
+#header_logo     {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: #fff; 
+    float: left;
+    }
+
+#wrapper_content {
+    margin: 128px auto; /* height Header - height WP-Admin-Bar 32px */
+    margin-bottom: 10px;
+    width: 900px;
+}
+
+#main       {
+    width: 520px;
+    margin: 5px; 
+    padding: 20px; 
+    float: left;
+ 
+    background: #fff;
+}
+
+#sidebar_r    {
+    width: 270px;
+    margin: 5px; 
+    padding: 10px; 
+    padding-top: 20px; 
+    background: #fff;
+    float: left;
+}
+#footer        {clear: both; height: 100px; padding: 20px; background: #313233; }
