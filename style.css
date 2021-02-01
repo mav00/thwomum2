@@ -16,14 +16,19 @@ footer     {clear: both; height: 100px; padding: 20px; }
 */
 html {margin-top:  0px;}
 
-body        {margin: 0px; color: #333; background: #f2f2f2;}
+body        {
+    margin: 0px; 
+    color: #333; 
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
 
 
  
 #wrapper_all    {margin: 0px; width: 100%; background: #f2f2f2;}
 #header     {
     width: 100%; 
-    height: 160px; 
+    height: 120px; 
     position: fixed;
     top: 0px;
     left: 0px;
@@ -34,31 +39,76 @@ body        {margin: 0px; color: #333; background: #f2f2f2;}
 #header_logo     {
     position: fixed;
     top: 0px;
-
     color: #fff; 
     float: left;
+}
+
+#header_logo img{
+    max-height: 120px;
 }
 
 #header_menu{
     position: fixed;
     top: 0px;
     margin-left: 300px;
-    margin-top: 90px;
+    margin-top: 68px;
     color: #fff; 
     float: right;
 }
 
 #header_menu li {
     list-style:none;   
-    display: inline;
+    font-size: 12px;
+    font-weight: bold;
 }
 #header_menu a{ 
     color: #fff; 
     text-decoration:none; 
     text-transform: uppercase; 
 }
-#header_menu a:hover{ color:#ccc;}
 
+#header_menu a:hover{ color:#ccc;}
+    
+#header_menu .menu > li{
+    display: inline-block;
+    color: #fff;
+    padding: 5px 5px;
+}
+
+#header_menu .sub-menu {
+    
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+#header_menu .sub-menu a{ 
+    color: #000;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#header_menu .sub-menu a:hover{ color:#ccc;}
+
+#header_menu .sub-menu li:hover {background-color: #003399;}
+
+
+#header_menu .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+
+#header_menu .menu-item-has-children:hover .sub-menu ul li {
+        display: none;
+}
+
+#header_menu .menu-item-has-children:hover .sub-menu li:hover ul li {
+        display: block;
+}    
+/*<!----------------------------------------------------------><-------->*/
 
 #wrapper_content {
     margin: 128px auto; /* height Header - height WP-Admin-Bar 32px */
@@ -101,6 +151,8 @@ body        {margin: 0px; color: #333; background: #f2f2f2;}
 #footer_menu li {
     list-style:none;   
     display: inline;
+    margin: 8px;
+    font-weight: bold;
 }
 #footer_menu a{ 
     color: #ccc; 
