@@ -11,20 +11,19 @@
 <body>
 <div id="wrapper_all">
     <div id="header">
-        <div id="header_logo">
-            <?php 
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-            ?>
-            <img src="<?php echo $image[0]; ?>" alt="">
-        </div><!-- end of #header_logo -->
-        <!--- <h1><?php bloginfo('name'); ?></h1> --->
-        <!--- <h3><?php bloginfo('description'); ?></h3> --->
-        <div id="header_menu">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-        </div>
-    </div><!-- header -->
+        
+        </div><!-- header -->
     <div id="wrapper_content">
-
-
+    
+    <div id="header_logo">
+        <?php 
+            $custom_logo_id = get_theme_mod( 'custom_logo' );
+            $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+        ?>
+        <img src="<?php echo $image[0]; ?>" alt="">
+    </div><!-- end of #header_logo -->
+    
+    <div id="header_menu">
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+    </div>
  
